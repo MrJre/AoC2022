@@ -18,5 +18,23 @@ final class AoC2022Tests: XCTestCase {
         let result = day1part2(input: input)
         XCTAssertEqual(result, 207456)
     }
+    
+    
+    func testDay2Part1() throws {
+        let file = file(forDay: 2)
+        let input = parseDay2Input(from: file)
+        
+        let result = day2part1(input: input)
+        XCTAssertEqual(result, 11603)
+    }
+    
+    func testDay2Part2() throws {
+        let file = file(forDay: 2)
+        let input = parseDay2Input(from: file)
+        
+        let result = day2part2(input: input)
+        XCTAssertEqual(result, -1)
+    }
 }
+
 
