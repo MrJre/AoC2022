@@ -114,21 +114,21 @@ final class AoC2022Tests: XCTestCase {
         XCTAssertEqual(result, 4370655)
     }
     
-    func testDay8Part1() throws {
-        let file = file(forDay: 8)
-        let input = parseDay8Input(from: file)
-        
-        let result = day8part1(input: input)
-        XCTAssertEqual(result, 1698)
-    }
-    
-    func testDay8Part2() throws {
-        let file = file(forDay: 8)
-        let input = parseDay8Input(from: file)
-        
-        let result = day8part2(input: input)
-        XCTAssertEqual(result, 672280)
-    }
+//    func testDay8Part1() throws {
+//        let file = file(forDay: 8)
+//        let input = parseDay8Input(from: file)
+//        
+//        let result = day8part1(input: input)
+//        XCTAssertEqual(result, 1698)
+//    }
+//    
+//    func testDay8Part2() throws {
+//        let file = file(forDay: 8)
+//        let input = parseDay8Input(from: file)
+//        
+//        let result = day8part2(input: input)
+//        XCTAssertEqual(result, 672280)
+//    }
     
     func testDay9Part1() throws {
         let file = file(forDay: 9)
@@ -145,7 +145,28 @@ final class AoC2022Tests: XCTestCase {
         let result = day9part2(input: input)
         XCTAssertEqual(result, 2533)
     }
+    
+    func testDay10Part1() throws {
+        let file = file(forDay: 10)
+        let input = parseDay10Input(from: file)
+        
+        let result = day10part1(input: input)
+        XCTAssertEqual(result, 14420)
+    }
+    
+    func testDay10Part2() throws {
+        let file = file(forDay: 10)
+        let input = parseDay10Input(from: file)
+        
+        let result = day10part2(input: input)
+        let output = """
+                     ####.###...##..###..#....####.####.#..#.
+                     ...#.#..#.#..#.#..#.#....#.......#.#..#.
+                     ..#..#..#.#..#.#..#.#....###....#..#..#.
+                     .#...###..####.###..#....#.....#...#..#.
+                     #....#.#..#..#.#.#..#....#....#....#..#.
+                     ####.#..#.#..#.#..#.####.#....####..##..
+                     """
+        XCTAssertEqual(result, output)
+    }
 }
-
-
-
